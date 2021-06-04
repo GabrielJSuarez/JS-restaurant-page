@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
+    mode: 'development',
     entry: {
         index: './src/index.js',
         tabbed: './src/tabbed.js',
@@ -44,6 +45,10 @@ module.exports = {
         ],
     },
     // Css minified/uglified
+    devtool: 'inline-source-map',
+    devServer: {
+        contentBase: './dist',
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: "[name].css",
