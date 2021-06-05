@@ -1,4 +1,4 @@
-export const Navigation = () => {
+export const NAVIGATION = () => {
     const NAVIGATION = document.querySelector("#navigation");
 
     NAVIGATION.addEventListener('click', function changeTab(e) {
