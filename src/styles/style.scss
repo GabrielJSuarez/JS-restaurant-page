@@ -1,5 +1,33 @@
-$red-color: red;
+$background-primary: #fcecdd !important;
+$background-secondary: #fff !important;
+$color-title: #ff6701;
+$color-text: #fea82f;
 
-#content {
-  background-color: $red-color;
+body {
+  background-color: $background-primary;
 }
+
+.title-primary {
+  color: $color-title;
+}
+
+.text-main {
+  color: $color-text;
+}
+
+h1 {
+  position: relative;
+  font-size: 6rem;
+  color: $color-title;
+  opacity: 0.8;
+}
+
+.hero-img {
+  opacity: 0.8;
+}
+
+.card {
+  background-color: $background-secondary;
+}
+
+
