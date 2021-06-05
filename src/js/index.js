@@ -1,17 +1,17 @@
 import '../styles/style.scss';
-import printMe from './tabbed.js';
 import sushi_1 from '../images/sushi_1.jpg';
 import sushi_2 from '../images/sushi_2.jpg';
 import sushi_3 from '../images/sushi_3.jpg';
 import sushi_4 from '../images/sushi_4.jpg';
 import hero from '../images/hero.jpg';
+import { Navigation } from "./navigation";
 
-printMe();
 
-const container = document.querySelector('#content');
+(() => {
+    const container = document.querySelector('#content');
 
-container.innerHTML = `
-  
+    container.innerHTML = `
+    <!-- Hero -->
     <div class="card bg-dark text-white">
       <img src="${hero}" class="card-img hero-img" alt="Hero">
       <div class="card-img-overlay d-flex justify-content-center align-items-end">
@@ -19,7 +19,23 @@ container.innerHTML = `
       </div>
     </div>
     
-    <main class="d-flex flex-column flex-wrap mt-3">
+    <!-- Navigation -->
+    <div class="d-flex justify-content-center py-3">
+        <ul id="navigation" class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a id="tab-home" class="nav-link title-primary active" aria-current="true" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a id="tab-menu" class="nav-link title-primary" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a id="tab-contact" class="nav-link title-primary" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Main Content -->
+    <main id ="main" class="d-flex flex-column flex-wrap">
         <div class="card mb-3 w-75">
           <div class="row g-0">
             <div class="col-md-4 d-flex flex-column justify-content-center">
@@ -62,7 +78,7 @@ container.innerHTML = `
           </div>
         </div>
         
-        <div class="card mb-3 w-75 align-self-end" style="max-width: 75%">
+        <div class="card mb-3 w-75 align-self-end">
           <div class="row g-0">
             <div class="col-md-8">
               <div class="card-body d-flex flex-column align-items-end">
@@ -78,3 +94,6 @@ container.innerHTML = `
         </div>
     </main>
 `;
+})();
+
+Navigation();
