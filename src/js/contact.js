@@ -31,3 +31,5 @@ export const CONTACT_CONTENT = () => {
         }
     })
 }
+
+export default { CONTACT_CONTENT };

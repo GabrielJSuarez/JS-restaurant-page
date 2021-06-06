@@ -63,3 +63,5 @@ export const MENU_CONTENT = () => {
         }
     })
 }
+
+export default { MENU_CONTENT };
