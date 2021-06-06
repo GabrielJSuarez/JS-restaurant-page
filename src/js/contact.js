@@ -1,16 +1,16 @@
 export const CONTACT_CONTENT = () => {
-    const home = document.querySelector('#tab-home');
-    const menu = document.querySelector('#tab-menu');
-    const contact = document.querySelector('#tab-contact');
-    const main = document.querySelector('#main');
-    const navigation = document.querySelector('#navigation');
+  const home = document.querySelector('#tab-home');
+  const menu = document.querySelector('#tab-menu');
+  const contact = document.querySelector('#tab-contact');
+  const main = document.querySelector('#main');
+  const navigation = document.querySelector('#navigation');
 
-    navigation.addEventListener('click', (e) => {
-        if (e.target.textContent === 'Contact' && (!contact.classList.contains('active'))) {
-            contact.classList.add('active', 'fw-bold');
-            home.classList.remove('active', 'fw-bold');
-            menu.classList.remove('active', 'fw-bold');
-            main.innerHTML = `
+  navigation.addEventListener('click', (e) => {
+    if (e.target.textContent === 'Contact' && (!contact.classList.contains('active'))) {
+      contact.classList.add('active', 'fw-bold');
+      home.classList.remove('active', 'fw-bold');
+      menu.classList.remove('active', 'fw-bold');
+      main.innerHTML = `
                 <div class="container text-center">
                     <h2 class="contact-title fw-bold mb-5">Contact Us!</h2>
                     
@@ -28,8 +28,8 @@ export const CONTACT_CONTENT = () => {
                     </form>
                 </div>
             `;
-        }
-    })
-}
+    }
+  });
+};
 
 export default { CONTACT_CONTENT };

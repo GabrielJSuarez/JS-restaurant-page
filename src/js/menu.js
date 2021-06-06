@@ -1,16 +1,16 @@
 export const MENU_CONTENT = () => {
-    const home = document.querySelector('#tab-home');
-    const menu = document.querySelector('#tab-menu');
-    const contact = document.querySelector('#tab-contact');
-    const main = document.querySelector('#main');
-    const navigation = document.querySelector('#navigation');
+  const home = document.querySelector('#tab-home');
+  const menu = document.querySelector('#tab-menu');
+  const contact = document.querySelector('#tab-contact');
+  const main = document.querySelector('#main');
+  const navigation = document.querySelector('#navigation');
 
-   navigation.addEventListener('click', (e) => {
-        if (e.target.textContent === 'Menu' && (!menu.classList.contains('active'))) {
-            menu.classList.add('active', 'fw-bold');
-            home.classList.remove('active', 'fw-bold');
-            contact.classList.remove('active', 'fw-bold');
-            main.innerHTML = `
+  navigation.addEventListener('click', (e) => {
+    if (e.target.textContent === 'Menu' && (!menu.classList.contains('active'))) {
+      menu.classList.add('active', 'fw-bold');
+      home.classList.remove('active', 'fw-bold');
+      contact.classList.remove('active', 'fw-bold');
+      main.innerHTML = `
                 <div class="d-flex flex-column flex-wrap">
                     <h2 class="contact-title fw-bold mb-5 text-center">See our Menu!</h2>
                 
@@ -60,8 +60,8 @@ export const MENU_CONTENT = () => {
                     </div>
                 </div>
             `;
-        }
-    })
-}
+    }
+  });
+};
 
 export default { MENU_CONTENT };

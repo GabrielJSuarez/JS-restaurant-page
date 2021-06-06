@@ -5,14 +5,14 @@ import '../styles/style.scss';
 import hero from '../images/hero.jpg';
 
 // Import Scripts
-import { MENU_CONTENT } from "./menu";
-import { CONTACT_CONTENT } from "./contact";
+import { MENU_CONTENT } from './menu';
+import { CONTACT_CONTENT } from './contact';
 
 // First Layout
 (() => {
-    const CONTAINER = document.querySelector('#content');
+  const CONTAINER = document.querySelector('#content');
 
-    CONTAINER.innerHTML = `
+  CONTAINER.innerHTML = `
     <!-- Hero -->
     <div class="card bg-dark text-white">
       <img src="${hero}" class="card-img hero-img" alt="Hero">
@@ -102,18 +102,18 @@ import { CONTACT_CONTENT } from "./contact";
 
 // Layout when clicking home
 const HOME_CONTENT = () => {
-    const home = document.querySelector('#tab-home');
-    const menu = document.querySelector('#tab-menu');
-    const contact = document.querySelector('#tab-contact');
-    const main = document.querySelector('#main');
-    const navigation = document.querySelector('#navigation');
+  const home = document.querySelector('#tab-home');
+  const menu = document.querySelector('#tab-menu');
+  const contact = document.querySelector('#tab-contact');
+  const main = document.querySelector('#main');
+  const navigation = document.querySelector('#navigation');
 
-    navigation.addEventListener('click', (e) => {
-        if (e.target.textContent === 'Home' && (!home.classList.contains('active'))) {
-            home.classList.add('active', 'fw-bold');
-            menu.classList.remove('active', 'fw-bold');
-            contact.classList.remove('active', 'fw-bold');
-            main.innerHTML = `
+  navigation.addEventListener('click', (e) => {
+    if (e.target.textContent === 'Home' && (!home.classList.contains('active'))) {
+      home.classList.add('active', 'fw-bold');
+      menu.classList.remove('active', 'fw-bold');
+      contact.classList.remove('active', 'fw-bold');
+      main.innerHTML = `
                 <!-- Main Content -->
                 <main id ="main" class="d-flex flex-column flex-wrap mt-4">
         <h2 class="contact-title fw-bold mb-5 text-center">Welcome!</h2>
@@ -176,9 +176,9 @@ const HOME_CONTENT = () => {
         </div>
     </main>
             `;
-        }
-    })
-}
+    }
+  });
+};
 
 // Calls for Navigation Behaviour, rendering menu and contact content
 HOME_CONTENT();
