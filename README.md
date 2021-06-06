@@ -4,6 +4,9 @@
 
 # Application Screenshot
 ![screenshot of Timeline Page](screenshot.png)
+![screenshot of Timeline Page](screenshot_1.png)
+![screenshot of Timeline Page](screenshot_2.png)
+![screenshot of Timeline Page](screenshot_3.png)
 
 ## Built With
 
