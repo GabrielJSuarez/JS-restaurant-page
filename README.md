@@ -19,7 +19,7 @@
 
 ## Live Demo
 
-You can visit [here](https://gabrieljsuarez.github.io/JS-library/) our app.
+You can visit [here](https://gabrieljsuarez.github.io/JS-restaurant-page/) our app.
 
 ## Getting Started
 
