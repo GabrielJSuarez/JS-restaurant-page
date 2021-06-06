@@ -9,15 +9,14 @@ import sushi_4 from '../images/sushi_4.jpg';
 import hero from '../images/hero.jpg';
 
 // Import Scripts
-import { NAVIGATION } from "./navigation";
 import { MENU_CONTENT } from "./menu";
 import { CONTACT_CONTENT } from "./contact";
 
 // First Layout
 (() => {
-    const container = document.querySelector('#content');
+    const CONTAINER = document.querySelector('#content');
 
-    container.innerHTML = `
+    CONTAINER.innerHTML = `
     <!-- Hero -->
     <div class="card bg-dark text-white">
       <img src="${hero}" class="card-img hero-img" alt="Hero">
@@ -105,12 +104,18 @@ import { CONTACT_CONTENT } from "./contact";
 
 // Layout when clicking home
 const HOME_CONTENT = () => {
-    const MAIN_CONTENT = document.querySelector('#main');
-    const NAVIGATION = document.querySelector('#navigation');
+    const home = document.querySelector('#tab-home');
+    const menu = document.querySelector('#tab-menu');
+    const contact = document.querySelector('#tab-contact');
+    const main = document.querySelector('#main');
+    const navigation = document.querySelector('#navigation');
 
-    NAVIGATION.addEventListener('click', (e) => {
-        if (e.target.textContent === 'Home') {
-            MAIN_CONTENT.innerHTML = `
+    navigation.addEventListener('click', (e) => {
+        if (e.target.textContent === 'Home' && (!home.classList.contains('active'))) {
+            home.classList.add('active');
+            menu.classList.remove('active');
+            contact.classList.remove('active');
+            main.innerHTML = `
                 <!-- Main Content -->
                 <main id ="main" class="d-flex flex-column flex-wrap">
                     <div class="card mb-3 w-75">
@@ -176,7 +181,6 @@ const HOME_CONTENT = () => {
 }
 
 // Calls for Navigation Behaviour, rendering menu and contact content
-NAVIGATION();
 HOME_CONTENT();
 MENU_CONTENT();
 CONTACT_CONTENT();

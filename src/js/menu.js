@@ -1,10 +1,16 @@
 export const MENU_CONTENT = () => {
-    const MAIN_CONTENT = document.querySelector('#main');
-    const NAVIGATION = document.querySelector('#navigation');
+    const home = document.querySelector('#tab-home');
+    const menu = document.querySelector('#tab-menu');
+    const contact = document.querySelector('#tab-contact');
+    const main = document.querySelector('#main');
+    const navigation = document.querySelector('#navigation');
 
-    NAVIGATION.addEventListener('click', (e) => {
-        if (e.target.textContent === 'Menu') {
-            MAIN_CONTENT.innerHTML = `
+   navigation.addEventListener('click', (e) => {
+        if (e.target.textContent === 'Menu' && (!menu.classList.contains('active'))) {
+            menu.classList.add('active');
+            home.classList.remove('active');
+            contact.classList.remove('active');
+            main.innerHTML = `
                 <p>TEST!</p>
             `;
         }
