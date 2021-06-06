@@ -30,4 +30,46 @@ h1 {
   background-color: $background-secondary;
 }
 
+.bg-image {
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sushi_1 {
+  background-image: url("../images/sushi_1.jpg");
+}
+
+.sushi_2 {
+  background-image: url("../images/sushi_2.jpg");
+}
+
+.sushi_3 {
+  background-image: url("../images/sushi_3.jpg");
+}
+
+.sushi_4 {
+  background-image: url("../images/sushi_4.jpg");
+}
+
+.sushi-image {
+  background-image: url("../images/sushi_menu_1.jpg");
+}
+
+.sashimi-image {
+  background-image: url("../images/sushi_menu_2.jpg");
+}
+
+.tempura-image {
+  background-image: url("../images/sushi_menu_3.jpg");
+}
+
+.btn-sushi {
+  background-color: $color-title;
+}
+
+.contact-title {
+  color: $color-title;
+}
 
