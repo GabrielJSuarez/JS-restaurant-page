@@ -1,20 +1,25 @@
 # Javascript Restaurant Page
 
-> This is a library Web-App made with Javascript and Bootstrap 5 where the user can add information about books, delete created books, and edit the status if the user has already read it.
+> This is a mockup restaurant page build with ES6 and Webpack, Sass used for custom styles and bootstrap 5 was used for custom utilities. Webpack image and styles loaders for compressed images and minimized css.
 
 # Application Screenshot
-![screenshot of Timeline Page](app_screenshot.png)
+![screenshot of Timeline Page](screenshot.png)
+![screenshot of Timeline Page](screenshot_1.png)
+![screenshot of Timeline Page](screenshot_2.png)
+![screenshot of Timeline Page](screenshot_3.png)
 
 ## Built With
 
 - HTML
 - CSS
+- Sass
+- Bootstrap 5  
 - ES6
 - Webpack
 
 ## Live Demo
 
-You can visit [here](https://gabrieljsuarez.github.io/JS-library/) our app.
+You can visit [here](https://gabrieljsuarez.github.io/JS-restaurant-page/) our app.
 
 ## Getting Started
 
@@ -22,23 +27,27 @@ To get a local copy up and running follow these simple example steps:
 
 - Clone this repository with:
 ```
-   https://github.com/GabrielJSuarez/JS-library.git
+   https://github.com/GabrielJSuarez/JS-restaurant-page.git
 ```
-- Open the project folder where the repository was downloaded.
-- Open the *index.html* file with your live server.
-- Start creating books.
+- Install Dependencies on package.json:
+```
+   $ npm install
+```
+- Build project from script declared in package.json:
+```
+   $ npm run build
+```
+- Launch live server visualizer:
+```
+   $ npm start
+```
 
 ## Prerequisites
 
 - Web Browser
-- Internet conection
-
-### Instructions
-
-1. Click on *New Book* button.
-2. Fill the form with the information of the book you want to add.
-3. Click the *Add Book* button to save the book.
-4. You can change the read status by clicking *Change Read*.
+- Internet connection
+- Node.js
+- npm
 
 ## Authors
 
