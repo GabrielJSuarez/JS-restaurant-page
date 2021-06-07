@@ -5,11 +5,9 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/js/index.js',
-    menu: './src/js/menu.js',
-    contact: './src/js/contact.js',
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
